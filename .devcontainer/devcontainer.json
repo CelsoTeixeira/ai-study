@@ -1,0 +1,11 @@
+{
+    "name": "ai-study-node",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+    "postCreateCommand": "cd exemplo-01-ecommerce-recomendations-template && npm install",
+    "forwardPorts": [3000],
+    "portsAttributes": {
+        "3000": {
+            "label": "browser-sync"
+        }
+    }
+}
